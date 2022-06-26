@@ -12,9 +12,9 @@
 
 :root {
   --colour-bg: #1f1f38;
-  --colour-bg-varient: #2c2c6c;
+  --colour-bg-variant: #2c2c6c;
   --colour-primary: #4db5ff;
-  --colour-primary-varient: rgba(77, 181, 255, 0.4);
+  --colour-primary-variant: rgba(77, 181, 255, 0.4);
   --colour-white: #ffffff;
   --colour-light: rgba(255, 255, 255, 0.6);
 
@@ -39,7 +39,9 @@ body {
   color: var(--colour-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
 }
 /*------------------- General Styles ------------------------*/
 .container {
@@ -60,6 +62,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2,
@@ -86,7 +89,7 @@ a:hover {
   color: var(--colour-white);
 }
 
-.btn {
+.button {
   width: max-content;
   display: inline-block;
   color: var(--colour-primary);
@@ -97,13 +100,13 @@ a:hover {
   transition: var(--transition);
 }
 
-.btn:hover {
+.button:hover {
   background-color: var(--colour-white);
   color: var(--colour-bg);
   border-color: transparent;
 }
 
-.btn-primary {
+.buttonPrimary {
   background-color: var(--colour-primary);
   color: var(--colour-bg);
 }
@@ -115,22 +118,22 @@ img {
 }
 
 /*------------------- Media Queries (medium devices) ------------------------*/
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1025px) {
   .container {
     width: var(--container-width-md);
   }
 
-  section{
-      margin-top: 6rem;
+  section {
+    margin-top: 6rem;
   }
 }
 /*------------------- Media Queries (small devices) ------------------------*/
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
 
-  section > h2{
-      margin-bottom: 2rem;
+  section > h2 {
+    margin-bottom: 2rem;
   }
 }

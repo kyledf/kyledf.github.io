@@ -7,7 +7,7 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <div className="container header_container">
+      <div className="container headerContainer">
         <h5>Hello I am</h5>
         <h1>Kyle Francis</h1>
         <h5 className="text-light">Software Engineer</h5>
@@ -17,7 +17,7 @@ const Header = () => {
           <img src={ME} alt="me" />
         </div>
 
-        <a href="#contact" className="scroll_down">Scroll Down</a>
+        <a href="#contact" className="scrollDown">Scroll Down</a>
       </div>
     </header>
   );

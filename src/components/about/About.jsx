@@ -1,9 +1,54 @@
-import React from 'react'
-import './about.css';
+import React from "react";
+import "./about.css";
+import ME from "../../assets/me-about.jpg";
+import { MdWork } from "react-icons/md";
+import { FaFolder, FaSmile } from "react-icons/fa";
+
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <section id="about">
+      <h5>Get to Know</h5>
+      <h2>About Me</h2>
 
-export default About
+      <div className="container aboutContainer">
+        <div className="aboutMe">
+          <div className="aboutMeImg">
+            <img src={ME} alt="About image" />
+          </div>
+        </div>
+        <div className="aboutContent">
+          <div className="aboutCards">
+            <article className="aboutCard">
+              <MdWork className="aboutIcon" />
+              <h5>Experience</h5>
+              <small>3+ Years University</small>
+            </article>
+
+            <article className="aboutCard">
+              <FaFolder className="aboutIcon" />
+              <h5>Projects</h5>
+              <small>1 Completed Project</small>
+            </article>
+
+            <article className="aboutCard">
+              <FaSmile className="aboutIcon" />
+              <h5>Hobbies</h5>
+              <small>Coding, Filmmaking, Drumming</small>
+            </article>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, dolores eligendi repudiandae dolore reiciendis
+            repellat aliquid, tempora voluptatem, magni dolor error rem.
+            Veritatis nemo, incidunt fuga numquam eum officiis voluptatem.
+          </p>
+
+          <a href="#contact" className="button buttonPrimary">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
