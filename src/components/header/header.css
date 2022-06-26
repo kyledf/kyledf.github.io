@@ -1,0 +1,68 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* --------------CTA---------------- */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* --------------Header Socials---------------- */
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+/* --------------Me Image---------------- */
+.me {
+  background: linear-gradient(var(--colour-white), transparent);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+}
+
+/* --------------Scroll Down---------------- */
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*------------------- Media Queries (medium devices) ------------------------*/
+@media screen and (min-width: 1025px) {
+  header {
+    height: 68vh;
+  }
+}
+/*------------------- Media Queries (small devices) ------------------------*/
+@media screen and (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+}
