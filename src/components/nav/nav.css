@@ -24,10 +24,10 @@ nav a {
 }
 
 nav a:hover {
-  background: var(--colour-bg-variant);
+  background: var(--colour-primary-variant);
 }
 
 nav a.active {
-  background: var(--colour-primary-variant);
-  color: var(--colour-white);
+  background: var(--colour-primary);
+  color: var(--colour-bg);
 }
