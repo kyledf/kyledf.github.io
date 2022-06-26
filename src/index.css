@@ -29,6 +29,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section{
+  margin-top: 8rem;
+  min-height: 100vh;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
