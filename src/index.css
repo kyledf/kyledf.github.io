@@ -61,7 +61,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  padding-top: 8rem;
   height: 100vh;
 }
 
@@ -76,7 +76,7 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-.text-light {
+.textLight {
   color: var(--colour-light);
 }
 
