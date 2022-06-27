@@ -6,42 +6,41 @@ import { MdWork } from "react-icons/md";
 import { useState } from "react";
 import "./nav.css";
 
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+const Nav = (props) => {
   return (
     <nav>
       <a
         href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
+        onClick={() => props.setActiveNav("#")}
+        className={props.activeNav === "#" ? "active" : ""}
       >
         <AiFillHome />
       </a>
       <a
         href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
+        onClick={() => props.setActiveNav("#about")}
+        className={props.activeNav === "#about" ? "active" : ""}
       >
         <FaUserAlt />
       </a>
       <a
         href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        onClick={() => props.setActiveNav("#experience")}
+        className={props.activeNav === "#experience" ? "active" : ""}
       >
         <MdWork />
       </a>
       <a
         href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
+        onClick={() => props.setActiveNav("#portfolio")}
+        className={props.activeNav === "#portfolio" ? "active" : ""}
       >
         <RiFilePaper2Fill />
       </a>
       <a
         href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
+        onClick={() => props.setActiveNav("#contact")}
+        className={props.activeNav === "#contact" ? "active" : ""}
       >
         <AiFillMessage />
       </a>
