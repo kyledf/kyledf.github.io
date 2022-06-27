@@ -29,7 +29,7 @@ html {
   scroll-behavior: smooth;
 }
 
-section{
+section {
   margin-top: 8rem;
   min-height: 100vh;
 }
@@ -69,13 +69,13 @@ section {
   padding-top: 5rem;
 }
 
-section > h2,
-section > h5 {
+.titleContainer > h5 {
   text-align: center;
   color: var(--colour-light);
 }
 
-section > h2 {
+.titleContainer > h2 {
+  text-align: center;
   color: var(--colour-primary);
   margin-bottom: 3rem;
 }

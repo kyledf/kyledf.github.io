@@ -5,8 +5,10 @@ import "./experience.css";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>The Skills I Have</h5>
-      <h2>My Experience</h2>
+      <div className="titleContainer">
+        <h5>The Skills I Have</h5>
+        <h2>My Experience</h2>
+      </div>
 
       <div className=" container experienceContainer">
         <div className="experienceFrontEnd">
