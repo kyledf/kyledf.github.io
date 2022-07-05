@@ -3,52 +3,28 @@ import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/portfolio4.png";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.png";
 
 const data = [
   {
     id: 1,
     title: "SportsHub",
     img: IMG1,
-    github: "https://github.com",
-    liveDemo: "https://www.youtube.com/watch?v=R73ASu2QsIc",
+    github: "https://github.com/kyleCS50/SportsHub",
+    videoDemo: "https://www.youtube.com/watch?v=R73ASu2QsIc",
   },
   {
     id: 2,
-    title: "Music Box App",
+    title: "CabsOnline",
     img: IMG2,
-    github: "https://github.com",
-    liveDemo: "https://dribbble.com/shots/18577041-Music-Box-App",
+    github: "https://github.com/kyleCS50/cabsOnline",
+    videoDemo: "https://youtu.be/4gldyWe_-m4",
   },
   {
     id: 3,
-    title: "CryptoWatch App UI Design",
+    title: "Virtual Pet Game",
     img: IMG3,
-    github: "https://github.com",
-    liveDemo: "https://dribbble.com/shots/18574935-CryptoWatch-App-UI-Design",
-  },
-  {
-    id: 4,
-    title: "Trip Planner & Social App Concept",
-    img: IMG4,
-    github: "https://github.com",
-    liveDemo: "https://dribbble.com/shots/18575656-Trip-Planner-Social-App-Concept",
-  },
-  {
-    id: 5,
-    title: "Discovery, Swapping and Settings screen",
-    img: IMG5,
-    github: "https://github.com",
-    liveDemo: "https://dribbble.com/shots/18576680-Discovery-Swapping-and-Settings-screen",
-  },
-  {
-    id: 6,
-    title: "Rental App — Booking",
-    img: IMG6,
-    github: "https://github.com",
-    liveDemo: "https://dribbble.com/shots/18580225-Rental-App-Booking",
+    github: "https://github.com/kyleCS50/KyleVirtualPet",
+    videoDemo: "https://youtu.be/ig_glJpfH_g",
   },
 ];
 const Portfolio = () => {
@@ -60,7 +36,7 @@ const Portfolio = () => {
       </div>
       <div className="container containerPortfolio">
         {
-        data.map(({id, title, img, github, liveDemo}) => {
+        data.map(({id, title, img, github, videoDemo}) => {
           return (
             <article key={id} className="portfolioItem">
               <div className="portfolioItemImg">
@@ -72,11 +48,11 @@ const Portfolio = () => {
                   Github
                 </a>
                 <a
-                  href={liveDemo}
+                  href={videoDemo}
                   className="button buttonPrimary"
                   target="_blank"
                 >
-                  Live Demo
+                  Video Demo
                 </a>
               </div>
             </article>

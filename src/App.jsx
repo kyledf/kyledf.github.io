@@ -7,7 +7,6 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Experience from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
-import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 
 const App = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -35,20 +34,11 @@ const App = () => {
   return (
     <>
       <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
-      <ScrollContainer>
-          <Header />
-          <About />
-          <Experience />
-          <Portfolio />
-          <Contact />
-      </ScrollContainer>
-
-      {/* <Header/>
-      <About/>
-      <Experience/>
-      <Portfolio/>
-      <Contact/> */}
-
+      <Header />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
       <Footer />
     </>
   );
