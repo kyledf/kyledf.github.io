@@ -11,12 +11,12 @@
 }
 
 :root {
-  --colour-bg: #1f1f38;
-  --colour-bg-variant: #2c2c6c;
-  --colour-primary: #4db5ff;
+  --colour-bg: rgb(31, 31, 56);
+  --colour-bg-variant: rgb(44, 44, 108);
+  --colour-primary: rgb(77, 181, 255);
   --colour-primary-variant: rgba(77, 181, 255, 0.4);
-  --colour-white: #ffffff;
-  --colour-light: rgba(255, 255, 255, 0.6);
+  --colour-white: rgb(255, 255, 255);
+  --colour-light: rgba(255, 255, 255, 0.7);
 
   --transition: all 400ms ease;
 
@@ -54,16 +54,20 @@ body {
   background-position: center;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@-webkit-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 /*------------------- General Styles ------------------------*/
