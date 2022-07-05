@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/kyle-francis-655540225/" target="_blank">
           <BsLinkedin />
         </a>
-        <a href="https://github.com/kyleCS50" target="_blank">
+        <a href="https://github.com/kyledf" target="_blank">
           <BsGithub />
         </a>
       </div>
