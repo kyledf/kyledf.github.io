@@ -54,17 +54,17 @@ body {
   background-position: center;
 }
 
-@-webkit-keyframes Gradient {
+@-webkit-keyframes gradient-animation {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-@-moz-keyframes Gradient {
+@-moz-keyframes gradient-animation {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-@keyframes Gradient { 
+@keyframes gradient-animation { 
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
