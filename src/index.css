@@ -55,19 +55,37 @@ body {
 }
 
 @-webkit-keyframes gradient-animation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes gradient-animation {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-@keyframes gradient-animation { 
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*------------------- General Styles ------------------------*/
@@ -158,7 +176,12 @@ img {
   .container {
     width: var(--container-width-sm);
   }
-
+  body {
+    background-size: 150% 150%;
+    background-color: var(--colour-bg);
+    background-image: url(./assets/bg-texture.png);
+    animation: none;
+  }
   section > h2 {
     margin-bottom: 2rem;
   }

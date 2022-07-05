@@ -49,6 +49,11 @@ footer a {
 
 /*------------------- Media Queries (small devices) ------------------------*/
 @media screen and (max-width: 600px) {
+  footer{
+    background-color: var(--colour-primary);
+    padding-top: 2rem;
+    margin-top: 0rem;
+  }
   .permalinks {
     flex-direction: column;
     gap: 1.5rem;

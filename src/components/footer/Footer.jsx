@@ -1,5 +1,6 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import {MdEmail} from 'react-icons/md';
 import "./footer.css";
 
 const Footer = () => {
@@ -30,6 +31,9 @@ const Footer = () => {
         </a>
         <a href="https://github.com/kyledf" target="_blank">
           <BsGithub />
+        </a>
+        <a href="mailto:kyledanielfrancis@gmail.com">
+          <MdEmail/>
         </a>
       </div>
 

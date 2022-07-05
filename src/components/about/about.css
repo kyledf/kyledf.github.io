@@ -37,17 +37,11 @@
 
 .aboutCard {
   background: var(--colour-bg-variant);
-  border: 1px solid transparent;
+  border: 2px solid var(--colour-primary-variant);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
-}
-
-.aboutCard:hover {
-  background: transparent;
-  border-color: var(--colour-primary-variant);
-  cursor: default;
 }
 
 .aboutIcon {
