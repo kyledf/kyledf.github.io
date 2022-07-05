@@ -40,35 +40,6 @@ const Contact = () => {
       </div>
 
       <div className="container contactContainer">
-        <div className="contactOptions">
-          <article className="contactOption">
-            <MdEmail className="contactOptionIcon" />
-            <h4>Email</h4>
-            <h5>fakeemail@gmail.com</h5>
-            <a href="mailto:fakeemail@gmail.com" target="_blank">
-              Send an Email
-            </a>
-          </article>
-          <article className="contactOption">
-            <BsMessenger className="contactOptionIcon" />
-            <h4>Messenger</h4>
-            <h5>@realPerson</h5>
-            <a href="https://m.me/realPerson" target="_blank">
-              Send a Message
-            </a>
-          </article>
-          <article className="contactOption">
-            <RiWhatsappFill className="contactOptionIcon" />
-            <h4>WhatsApp</h4>
-            <h5>021 123 4567</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=+0211234567"
-              target="_blank"
-            >
-              Send a Message
-            </a>
-          </article>
-        </div>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Email" required />

@@ -40,14 +40,32 @@ section {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--colour-bg);
+  background: linear-gradient(
+    115deg,
+    var(--colour-bg),
+    var(--colour-bg-variant),
+    var(--colour-primary)
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 30s ease infinite;
   color: var(--colour-white);
-  line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  line-height: 1.5;
   background-attachment: fixed;
   background-position: center;
-  background-size: contain;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /*------------------- General Styles ------------------------*/
 .container {
   width: var(--container-width-lg);
