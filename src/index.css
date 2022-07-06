@@ -11,9 +11,9 @@
 }
 
 :root {
-  --colour-bg: rgb(31, 31, 56);
-  --colour-bg-variant: rgb(44, 44, 108);
-  --colour-primary: rgb(77, 181, 255);
+  --colour-bg: #1f1f38;
+  --colour-bg-variant: rgba(44, 44, 108, 0.5);
+  --colour-primary: #4db5ff;
   --colour-primary-variant: rgba(77, 181, 255, 0.4);
   --colour-white: rgb(255, 255, 255);
   --colour-light: rgba(255, 255, 255, 0.7);
@@ -43,7 +43,7 @@ body {
   background: linear-gradient(
     115deg,
     var(--colour-bg),
-    var(--colour-bg-variant),
+    #2c2c6c,
     var(--colour-primary)
   );
   background-size: 200% 200%;
