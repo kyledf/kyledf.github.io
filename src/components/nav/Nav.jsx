@@ -3,16 +3,15 @@ import { AiFillHome, AiFillMessage } from "react-icons/ai";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
-import { useState } from "react";
 import "./nav.css";
 
 const Nav = (props) => {
   return (
     <nav>
       <a
-        href="#"
-        onClick={() => props.setActiveNav("#")}
-        className={props.activeNav === "#" ? "active" : ""}
+        href="#header"
+        onClick={() => props.setActiveNav("#header")}
+        className={props.activeNav === "#header" ? "active" : ""}
       >
         <AiFillHome />
       </a>

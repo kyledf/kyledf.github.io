@@ -177,7 +177,7 @@ img {
     width: var(--container-width-sm);
   }
   body {
-    background-size: 150% 150%;
+    background-size: cover;
     background-color: var(--colour-bg);
     background-image: url(./assets/bg-texture.png);
     animation: none;

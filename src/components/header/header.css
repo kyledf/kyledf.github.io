@@ -1,8 +1,3 @@
-header {
-  min-height: 100vh;
-  padding-top: 5rem;
-}
-
 .headerContainer {
   text-align: center;
   height: 100%;
@@ -50,9 +45,6 @@ header {
 }
 /*------------------- Media Queries (small devices) ------------------------*/
 @media screen and (max-width: 600px) {
-  header {
-    padding-top: 3rem;
-  }
   .headerSocials {
     gap: 3rem;
   }

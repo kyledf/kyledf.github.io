@@ -6,7 +6,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header>
+    <section id="header">
         <div className="container headerContainer">
             <div className="headerContent">
               <h5>Hello I am</h5>
@@ -19,7 +19,7 @@ const Header = () => {
                 <img src={ME} alt="me" />
             </div>
         </div>
-    </header>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 import { useState } from "react";
 
 const App = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#header");
 
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav a");
