@@ -9,9 +9,9 @@ const Nav = (props) => {
   return (
     <nav>
       <a
-        href="#header"
-        onClick={() => props.setActiveNav("#header")}
-        className={props.activeNav === "#header" ? "active" : ""}
+        href="#"
+        onClick={() => props.setActiveNav("#")}
+        className={props.activeNav === "#" ? "active" : ""}
       >
         <AiFillHome />
       </a>
