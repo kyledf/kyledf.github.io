@@ -1,3 +1,3 @@
 # Kyle's Portfolio
 
-Check out my portfolio [here](kyledf.me).
+Check out my portfolio [here](https://kyledf.me).
