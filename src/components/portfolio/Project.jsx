@@ -12,19 +12,18 @@ const Project = (props) => {
         <img src={props.img} alt={props.title} />
       </div>
       <h3>{props.title}</h3>
-      <div className="about">
-        <p>{expand && props.about}</p>
-      </div>
+      {expand && props.about}
+      <div className="icons">{expand && props.icon}</div>
       <div className="portfolioItemCTA">
         <a href={props.github} className="button" target="_blank">
           Github
         </a>
         <a
-          href={props.videoDemo}
+          href={props.demo}
           className="button buttonPrimary"
           target="_blank"
         >
-          Video Demo
+          Demo
         </a>
         <a
           className="button"

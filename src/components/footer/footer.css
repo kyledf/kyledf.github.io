@@ -1,4 +1,8 @@
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(transparent, var(--colour-primary));
   padding: 3rem 0;
   text-align: center;
@@ -47,9 +51,18 @@ footer a {
   color: var(--colour-bg);
 }
 
+footer img {
+  padding-bottom: 1rem;
+  width: 3rem;
+  transition: var(--transition);
+}
+footer img:hover {
+  transform: scale(1.2);
+}
+
 /*------------------- Media Queries (small devices) ------------------------*/
 @media screen and (max-width: 600px) {
-  footer{
+  footer {
     background-color: var(--colour-primary);
     padding-top: 2rem;
     margin-top: 0rem;

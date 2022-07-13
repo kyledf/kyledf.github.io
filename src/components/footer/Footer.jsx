@@ -1,12 +1,15 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import {MdEmail} from 'react-icons/md';
+import { MdEmail } from "react-icons/md";
+import LOGO from "../../assets/logo.png";
 import "./footer.css";
 
 const Footer = () => {
   return (
     <footer>
-      <a href=""></a>
+      <a href="#">
+        <img src={LOGO} alt="Logo for website" />
+      </a>
       <ul className="permalinks">
         <li>
           <a href="#">Home</a>
@@ -26,19 +29,22 @@ const Footer = () => {
       </ul>
 
       <div className="footerSocials">
-        <a href="https://www.linkedin.com/in/kyle-francis-655540225/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/kyle-francis-655540225/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
         <a href="https://github.com/kyledf" target="_blank">
           <BsGithub />
         </a>
         <a href="mailto:kyledanielfrancis@gmail.com">
-          <MdEmail/>
+          <MdEmail />
         </a>
       </div>
 
       <div className="footerCopyright">
-        <small>&copy; Kyle Francis. All rights reserved. 2022</small>
+        <small>Copyright &copy; 2022 Kyle Francis. All rights reserved.</small>
       </div>
     </footer>
   );

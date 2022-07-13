@@ -24,9 +24,13 @@
 
 .portfolioItemCTA {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.about {
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   padding-bottom: 1rem;
 }
 

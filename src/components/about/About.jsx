@@ -39,7 +39,12 @@ const About = () => {
 
           <p>
             I am a full-time student at AUT studying a Bachelor of Engineering
-            (Honours) majoring in Software Engineering. 
+            (Honours) majoring in Software Engineering. I enjoy programming,
+            filmmaking, drumming and traveling. I enjoy working as part of a
+            team and independently as a solo developer. I am always willing to
+            learn more about new technologies and how to use them. In the
+            future, I would love to combine my passion for film and programming
+            into a career as a front-end or full-stack developer.
           </p>
 
           <a href="#contact" className="button buttonPrimary">
