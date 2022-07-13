@@ -56,7 +56,7 @@ const data = [
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
     github: "https://github.com/kyledf/portfolio",
-    demo: "https://kyledf.me/portfolio",
+    demo: "https://kyledf.me",
     icons: [<FaReact size={30} />, <FaHtml5 size={30} />, <SiCss3 size={30} />, <SiJavascript size={30} />],
   },
 ];
