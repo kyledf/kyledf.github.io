@@ -43,7 +43,8 @@ const data = [
     id: 3,
     title: "Virtual Pet Game",
     img: IMG3,
-    about: "This game app allows users to play with a virtual pet of their choosing. They can feed and play with the pet or let the pet sleep. The aim of the game is to get the highest number of rounds. The game was built with Java, SQL, and Apache Derby DB.",
+    about:
+      "This game app allows users to play with a virtual pet of their choosing. They can feed and play with the pet or let the pet sleep. The aim of the game is to get the highest number of rounds. The game was built with Java, SQL, and Apache Derby DB.",
     github: "https://github.com/kyledf/KyleVirtualPet",
     demo: "https://youtu.be/ig_glJpfH_g",
     icons: [<FaJava size={30} />, <SiMysql size={30} />],
@@ -52,8 +53,7 @@ const data = [
     id: 4,
     title: "Portfolio Website",
     img: IMG4,
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
+    about: "This website allows me to showcase my skills and projects, let people connect with me via my socials, and get in contact with me.",
     github: "https://github.com/kyledf/portfolio",
     demo: "https://kyledf.me",
     icons: [
