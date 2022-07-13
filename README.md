@@ -1,8 +1,3 @@
-Website Portfolio
-Components:
-  Header
-  About
-  Experience
-  Portfolio
-  Contact
-  Footer
+# Kyle's Portfolio
+
+Check out my portfolio [here](kyledf.me).
