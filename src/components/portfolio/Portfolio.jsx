@@ -14,7 +14,7 @@ const data = [
     title: "SportsHub",
     img: IMG1,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
+      "An app where athletes can create and join events and teams, and chat with other athletes. The app is built with React Native, JavaScript, and Firebase.",
     github: "https://github.com/kyledf/SportsHub",
     demo: "https://www.youtube.com/watch?v=R73ASu2QsIc",
     icons: [
@@ -28,7 +28,7 @@ const data = [
     title: "CabsOnline",
     img: IMG2,
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
+      "CabsOnline allows users to book a cab service from a pick-up destination to a drop-off destination. If you are an admin of the page you can assign bookings to drivers and view bookings by searching their booking ID. The website is built with HTML, CSS, and JavaScript, with PHP and AJAX to handle processing bookings.",
     github: "https://github.com/kyledf/cabsOnline",
     demo: "https://youtu.be/4gldyWe_-m4",
     icons: [
@@ -43,8 +43,7 @@ const data = [
     id: 3,
     title: "Virtual Pet Game",
     img: IMG3,
-    about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
+    about: "This game app allows users to play with a virtual pet of their choosing. They can feed and play with the pet or let the pet sleep. The aim of the game is to get the highest number of rounds. The game was built with Java, SQL, and Apache Derby DB.",
     github: "https://github.com/kyledf/KyleVirtualPet",
     demo: "https://youtu.be/ig_glJpfH_g",
     icons: [<FaJava size={30} />, <SiMysql size={30} />],
@@ -57,7 +56,12 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi.",
     github: "https://github.com/kyledf/portfolio",
     demo: "https://kyledf.me",
-    icons: [<FaReact size={30} />, <FaHtml5 size={30} />, <SiCss3 size={30} />, <SiJavascript size={30} />],
+    icons: [
+      <FaReact size={30} />,
+      <FaHtml5 size={30} />,
+      <SiCss3 size={30} />,
+      <SiJavascript size={30} />,
+    ],
   },
 ];
 
