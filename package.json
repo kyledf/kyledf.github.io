@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kyledf.me",
+  "homepage": "https://kyledf.me",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -16,8 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "add-domain": "echo \"kyledf.me\" > build/CNAME",
+    "deploy": "npm run add-domain && gh-pages -d build",
+    "bd": "npm run build && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
