@@ -44,6 +44,10 @@
   transition: var(--transition);
 }
 
+.aboutCard:hover{
+  transform: scale(1.05);
+}
+
 .aboutIcon {
   color: var(--colour-primary);
   font-size: 1.4rem;

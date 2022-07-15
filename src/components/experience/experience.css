@@ -11,6 +11,9 @@
   border: 2px solid var(--colour-primary-variant);
   transition: var(--transition);
 }
+.experienceContainer > div:hover {
+  transform: scale(1.05);
+}
 
 .experienceContainer > div h3 {
   text-align: center;
