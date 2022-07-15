@@ -65,7 +65,7 @@ footer img:hover {
   footer {
     background-color: var(--colour-primary);
     padding-top: 2rem;
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
   .permalinks {
     flex-direction: column;

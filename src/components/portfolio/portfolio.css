@@ -21,17 +21,27 @@
 .portfolioItem h3 {
   margin: 1.2rem 0 1rem;
 }
+.portfolioItem h4 {
+  padding-top: 0.5rem;
+}
 
 .portfolioItemCTA {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.about {
+  color: var(--colour-light);
+}
+
 .icons {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
+  color: var(--colour-light);
 }
 
 /*------------------- Media Queries (medium devices) ------------------------*/

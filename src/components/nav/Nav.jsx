@@ -12,6 +12,7 @@ const Nav = (props) => {
         href="#"
         onClick={() => props.setActiveNav("#")}
         className={props.activeNav === "#" ? "active" : ""}
+        datatooltip="Home"
       >
         <AiFillHome />
       </a>
@@ -19,6 +20,7 @@ const Nav = (props) => {
         href="#about"
         onClick={() => props.setActiveNav("#about")}
         className={props.activeNav === "#about" ? "active" : ""}
+        datatooltip="About"
       >
         <FaUserAlt />
       </a>
@@ -26,6 +28,7 @@ const Nav = (props) => {
         href="#experience"
         onClick={() => props.setActiveNav("#experience")}
         className={props.activeNav === "#experience" ? "active" : ""}
+        datatooltip="Experience"
       >
         <MdWork />
       </a>
@@ -33,6 +36,7 @@ const Nav = (props) => {
         href="#portfolio"
         onClick={() => props.setActiveNav("#portfolio")}
         className={props.activeNav === "#portfolio" ? "active" : ""}
+        datatooltip="Portfolio"
       >
         <RiFilePaper2Fill />
       </a>
@@ -40,6 +44,7 @@ const Nav = (props) => {
         href="#contact"
         onClick={() => props.setActiveNav("#contact")}
         className={props.activeNav === "#contact" ? "active" : ""}
+        datatooltip="Contact"
       >
         <AiFillMessage />
       </a>

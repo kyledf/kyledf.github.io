@@ -31,3 +31,29 @@ nav a.active {
   background: var(--colour-primary);
   color: var(--colour-bg);
 }
+
+nav a::before {
+  content: attr(datatooltip);
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 4rem;
+  background-color: var(--colour-primary);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: var(--transition);
+  opacity: 0;
+  color: var(--colour-bg);
+  transform: translateX(-40%);
+}
+
+nav a:hover::before {
+  opacity: 1;
+  bottom: 4.5rem;
+}
+
+/*------------------- Media Queries (medium devices) ------------------------*/
+@media screen and (max-width: 1025px) {
+}
+/*------------------- Media Queries (small devices) ------------------------*/
+@media screen and (max-width: 600px) {
+}
