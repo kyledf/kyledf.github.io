@@ -6,7 +6,7 @@ const HeaderSocials = () => {
   return (
     <div className="headerSocials">
       <a
-        href="https://www.linkedin.com/in/kyle-francis-655540225/"
+        href="https://www.linkedin.com/in/kyledf/"
         target="_blank"
       >
         <BsLinkedin />
