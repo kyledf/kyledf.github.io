@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import { useState } from "react";
-import { FaExpandAlt } from "react-icons/fa";
+import { BiExpand, BiCollapse } from "react-icons/bi";
 
 const Project = (props) => {
   const [expand, setExpand] = useState(false);
@@ -14,7 +14,7 @@ const Project = (props) => {
       <h3>{props.title}</h3>
       {expand && <h4>About</h4>}
       <div className="about">{expand && props.about}</div>
-      {expand && <h4>Tech Used</h4>}
+      {expand && <h4>Tools Used</h4>}
       <div className="icons">{expand && props.icon}</div>
       <div className="portfolioItemCTA">
         <a href={props.github} className="button" target="_blank">
@@ -24,12 +24,12 @@ const Project = (props) => {
           Demo
         </a>
         <a
-          className="button"
+          className="button expandButton"
           onClick={() => {
             setExpand(!expand);
           }}
         >
-          <FaExpandAlt />
+         { expand? <BiCollapse/> : <BiExpand/>}
         </a>
       </div>
     </article>
