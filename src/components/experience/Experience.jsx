@@ -72,6 +72,13 @@ const Experience = () => {
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
+                <h4>Java</h4>
+                <small className="textLight">2+ years</small>
+              </div>
+            </article>
+            <article className="experienceDetails">
+              <SiCheckmarx className="experienceDetailsIcon" />
+              <div>
                 <h4>Firebase</h4>
                 <small className="textLight">4+ months</small>
               </div>
