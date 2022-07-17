@@ -166,7 +166,9 @@ img {
   .container {
     width: var(--container-width-md);
   }
-
+  header {
+    margin-bottom: 15vh;
+  }
   section {
     margin-top: 6rem;
   }
@@ -182,7 +184,18 @@ img {
     background-image: url(./assets/bg-texture.png);
     animation: none;
   }
+  header {
+    margin-bottom: 0;
+  }
   section > h2 {
     margin-bottom: 2rem;
+  }
+  section {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  header {
+    margin-bottom: 100vh;
   }
 }
