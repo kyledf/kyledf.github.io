@@ -60,6 +60,14 @@ footer img:hover {
   transform: scale(1.2);
 }
 
+/*------------------- Media Queries (medium devices)-------------------*/
+@media screen and (max-width: 1025px) {
+  footer {
+    background-color: var(--colour-primary);
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}
 /*------------------- Media Queries (small devices) ------------------------*/
 @media screen and (max-width: 600px) {
   footer {

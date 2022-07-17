@@ -169,6 +169,12 @@ img {
   header {
     margin-bottom: 15vh;
   }
+  body {
+    background-size: contain;
+    background-color: var(--colour-bg);
+    background-image: url(./assets/bg-texture.png);
+    animation: none;
+  }
   section {
     margin-top: 6rem;
   }
