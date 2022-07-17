@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  justify-content: center;
 }
 
-.portfolioItem {
+.portfolioItem,
+.portfolioItemExpanded {
   background: var(--colour-bg-variant);
   padding: 1rem;
   border-radius: 2rem;
@@ -13,7 +13,8 @@
   height: fit-content;
   transition: var(--transition);
 }
-.portfolioItem:hover {
+.portfolioItem:hover,
+.portfolioItemExpanded:hover {
   transform: scale(1.03);
 }
 
@@ -22,10 +23,12 @@
   overflow: hidden;
 }
 
-.portfolioItem h3 {
+.portfolioItem h3,
+.portfolioItemExpanded h3 {
   margin: 1.2rem 0 1rem;
 }
-.portfolioItem h4 {
+.portfolioItem h4,
+.portfolioItemExpanded h4 {
   padding-top: 0.5rem;
 }
 
@@ -44,10 +47,12 @@
   padding-top: 0;
   font-size: 1.7rem;
 }
+
 .expandButton:hover {
   color: var(--colour-white);
   background-color: transparent;
 }
+
 .about {
   color: var(--colour-light);
 }
@@ -59,6 +64,18 @@
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   color: var(--colour-light);
+}
+
+.expand {
+  max-height: 0;
+  transition: all 1500ms ease-in-out;
+  overflow: hidden;
+}
+.portfolioItemExpanded .expand {
+  max-height: 50rem;
+}
+.portfolioItemExpanded .expandButton {
+  transform: rotate(180deg);
 }
 /*------------------- Media Queries (medium devices) ------------------------*/
 @media screen and (max-width: 1025px) {

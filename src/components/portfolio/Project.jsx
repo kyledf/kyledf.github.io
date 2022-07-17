@@ -1,21 +1,24 @@
 import React from "react";
 import "./portfolio.css";
 import { useState } from "react";
-import { BiExpand, BiCollapse } from "react-icons/bi";
+import { MdExpandMore } from "react-icons/md";
 
 const Project = (props) => {
   const [expand, setExpand] = useState(false);
+  const [itemName, setItemName] = useState("portfolioItem");
 
   return (
-    <article key={props.id} className="portfolioItem">
+    <article key={props.id} className={itemName}>
       <div className="portfolioItemImg">
         <img src={props.img} alt={props.title} />
       </div>
       <h3>{props.title}</h3>
-      {expand && <h4>About</h4>}
-      <div className="about">{expand && props.about}</div>
-      {expand && <h4>Tools Used</h4>}
-      <div className="icons">{expand && props.icon}</div>
+      <div className="expand">
+        <h4>About</h4>
+        <div className="about">{props.about}</div>
+        <h4>Tools Used</h4>
+        <div className="icons">{props.icon}</div>
+      </div>
       <div className="portfolioItemCTA">
         <a href={props.github} className="button" target="_blank">
           Github
@@ -23,14 +26,15 @@ const Project = (props) => {
         <a href={props.demo} className="button buttonPrimary" target="_blank">
           Demo
         </a>
-        <a
+        <label
           className="button expandButton"
           onClick={() => {
             setExpand(!expand);
+            setItemName(expand ? "portfolioItem" : "portfolioItemExpanded");
           }}
         >
-         { expand? <BiCollapse/> : <BiExpand/>}
-        </a>
+          <MdExpandMore />
+        </label>
       </div>
     </article>
   );
