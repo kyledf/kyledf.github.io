@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2ffb9d4.css",
+    "main.css": "/static/css/main.35fcd3e8.css",
     "main.js": "/static/js/main.0506d708.js",
     "static/media/portfolio3.png": "/static/media/portfolio3.de98dd558e6f772d6037.png",
     "static/media/portfolio2.png": "/static/media/portfolio2.23aba44f3efa1551c7e9.png",
@@ -12,11 +12,11 @@
     "static/media/Kyle-Francis-Portfolio-CV.pdf": "/static/media/Kyle-Francis-Portfolio-CV.a3ad336ae45e98f9fe26.pdf",
     "static/media/bg-texture.png": "/static/media/bg-texture.684928c6dd791afe1081.png",
     "index.html": "/index.html",
-    "main.f2ffb9d4.css.map": "/static/css/main.f2ffb9d4.css.map",
+    "main.35fcd3e8.css.map": "/static/css/main.35fcd3e8.css.map",
     "main.0506d708.js.map": "/static/js/main.0506d708.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2ffb9d4.css",
+    "static/css/main.35fcd3e8.css",
     "static/js/main.0506d708.js"
   ]
 }
