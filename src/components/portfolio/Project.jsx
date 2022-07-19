@@ -4,26 +4,27 @@ import { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
 
 const Project = (props) => {
+  const {id, img, title, about, icon, github, demo} = props;
   const [expand, setExpand] = useState(false);
   const [itemName, setItemName] = useState("portfolioItem");
 
   return (
-    <article key={props.id} className={itemName}>
+    <article key={id} className={itemName}>
       <div className="portfolioItemImg">
-        <img src={props.img} alt={props.title} />
+        <img src={img} alt={title} />
       </div>
-      <h3>{props.title}</h3>
+      <h3>{title}</h3>
       <div className="expand">
         <h4>About</h4>
-        <div className="about">{props.about}</div>
+        <div className="about">{about}</div>
         <h4>Tools Used</h4>
-        <div className="icons">{props.icon}</div>
+        <div className="icons">{icon}</div>
       </div>
       <div className="portfolioItemCTA">
-        <a href={props.github} className="button" target="_blank">
+        <a href={github} className="button" target="_blank">
           Github
         </a>
-        <a href={props.demo} className="button buttonPrimary" target="_blank">
+        <a href={demo} className="button buttonPrimary" target="_blank">
           Demo
         </a>
         <label

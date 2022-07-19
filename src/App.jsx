@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
+import Modal from "./components/contact/Modal";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -10,6 +11,9 @@ import { useState } from "react";
 
 const App = () => {
   const [activeNav, setActiveNav] = useState("#");
+  const [openModal, setOpenModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalPara, setModalPara] = useState("");
   const handleScrollActiveNav = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
@@ -34,6 +38,15 @@ const App = () => {
 
   return (
     <>
+      {openModal && (
+        <Modal
+          modalTitle={modalTitle}
+          modalPara={modalPara}
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+        />
+      )}
+
       <Nav
         activeNav={activeNav}
         setActiveNav={setActiveNav}
@@ -43,7 +56,11 @@ const App = () => {
       <About />
       <Experience />
       <Portfolio />
-      <Contact />
+      <Contact
+        setOpenModal={setOpenModal}
+        setModalTitle={setModalTitle}
+        setModalPara={setModalPara}
+      />
       <Footer />
     </>
   );

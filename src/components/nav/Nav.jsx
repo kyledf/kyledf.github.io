@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillHome, AiFillMessage } from "react-icons/ai";
-import { RiFilePaper2Fill } from "react-icons/ri";
-import { FaUserAlt } from "react-icons/fa";
+import { FaUserAlt, FaFileCode } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import "./nav.css";
 import { useEffect } from "react";
@@ -44,7 +43,7 @@ const Nav = (props) => {
         className={activeNav === "#portfolio" ? "active" : ""}
         datatooltip="Portfolio"
       >
-        <RiFilePaper2Fill />
+        <FaFileCode />
       </a>
       <a
         href="#contact"

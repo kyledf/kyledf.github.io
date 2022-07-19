@@ -14,6 +14,7 @@
   height: fit-content;
   transition: var(--transition);
 }
+
 .portfolioItem:hover,
 .portfolioItemExpanded:hover {
   transform: scale(1.03);
@@ -28,6 +29,7 @@
 .portfolioItemExpanded h3 {
   margin: 1.2rem 0 1rem;
 }
+
 .portfolioItem h4,
 .portfolioItemExpanded h4 {
   padding-top: 0.5rem;
@@ -39,6 +41,7 @@
   justify-content: space-between;
   gap: 1rem;
 }
+
 .expandButton {
   border: none;
   display: flex;
@@ -52,6 +55,10 @@
 .expandButton:hover {
   color: var(--colour-white);
   background-color: transparent;
+}
+
+.portfolioItemExpanded .expandButton {
+  transform: rotate(180deg);
 }
 
 .about {
@@ -72,12 +79,11 @@
   transition: all 1500ms ease-in-out;
   overflow: hidden;
 }
+
 .portfolioItemExpanded .expand {
   max-height: 50rem;
 }
-.portfolioItemExpanded .expandButton {
-  transform: rotate(180deg);
-}
+
 /*------------------- Media Queries (medium devices) ------------------------*/
 @media screen and (max-width: 1025px) {
   .containerPortfolio {
@@ -85,6 +91,7 @@
     gap: 1.2rem;
   }
 }
+
 /*------------------- Media Queries (small devices) ------------------------*/
 @media screen and (max-width: 600px) {
   .containerPortfolio {
