@@ -4,46 +4,52 @@ import { RiFilePaper2Fill } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import "./nav.css";
+import { useEffect } from "react";
 
 const Nav = (props) => {
+  const { activeNav, setActiveNav, handleScrollActiveNav } = props;
+  useEffect(() => {
+    handleScrollActiveNav();
+  }, []);
+
   return (
     <nav>
       <a
         href="#"
-        onClick={() => props.setActiveNav("#")}
-        className={props.activeNav === "#" ? "active" : ""}
+        onClick={() => setActiveNav("#")}
+        className={activeNav === "#" ? "active" : ""}
         datatooltip="Home"
       >
         <AiFillHome />
       </a>
       <a
         href="#about"
-        onClick={() => props.setActiveNav("#about")}
-        className={props.activeNav === "#about" ? "active" : ""}
+        onClick={() => setActiveNav("#about")}
+        className={activeNav === "#about" ? "active" : ""}
         datatooltip="About"
       >
         <FaUserAlt />
       </a>
       <a
         href="#experience"
-        onClick={() => props.setActiveNav("#experience")}
-        className={props.activeNav === "#experience" ? "active" : ""}
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
         datatooltip="Experience"
       >
         <MdWork />
       </a>
       <a
         href="#portfolio"
-        onClick={() => props.setActiveNav("#portfolio")}
-        className={props.activeNav === "#portfolio" ? "active" : ""}
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
         datatooltip="Portfolio"
       >
         <RiFilePaper2Fill />
       </a>
       <a
         href="#contact"
-        onClick={() => props.setActiveNav("#contact")}
-        className={props.activeNav === "#contact" ? "active" : ""}
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
         datatooltip="Contact"
       >
         <AiFillMessage />

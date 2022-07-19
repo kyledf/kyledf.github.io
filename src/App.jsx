@@ -10,30 +10,35 @@ import { useState } from "react";
 
 const App = () => {
   const [activeNav, setActiveNav] = useState("#");
+  const handleScrollActiveNav = () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
 
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop - sectionHeight / 3) {
-        current = section.id;
-      }
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          current = section.id;
+        }
+      });
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
     });
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
+  };
 
   return (
     <>
-      <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
+      <Nav
+        activeNav={activeNav}
+        setActiveNav={setActiveNav}
+        handleScrollActiveNav={handleScrollActiveNav}
+      />
       <Header />
       <About />
       <Experience />
