@@ -1,6 +1,8 @@
 header {
-  margin-top: 5rem;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerContainer {
@@ -13,8 +15,10 @@ header {
 .cta {
   margin-top: 2.5rem;
   display: flex;
-  gap: 1.2rem;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.2rem;
 }
 
 /* --------------Header Socials---------------- */
@@ -31,19 +35,12 @@ header {
   font-size: 1.5rem;
 }
 
-/* --------------Me Image---------------- */
-.me {
-  background: linear-gradient(#dddbcb, transparent);
-  margin-top: 1rem;
-  width: 22rem;
-  height: 25rem;
-  position: absolute;
-  left: calc(50% - 11rem);
-  border-radius: 12rem 12rem 0 0;
-}
-
 /*------------------- Media Queries (medium devices) ------------------------*/
 @media screen and (max-width: 1025px) {
+  .cta{
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
   .headerSocials a {
     font-size: 1.7rem;
   }
@@ -53,7 +50,8 @@ header {
   .headerSocials {
     gap: 3rem;
   }
-  .me {
-    margin-top: 0;
+  .cta {
+    margin-top: 1rem;
+    flex-direction: column;
   }
 }

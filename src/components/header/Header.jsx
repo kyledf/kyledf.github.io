@@ -1,6 +1,5 @@
 import React from "react";
 import CTA from "./CTA";
-import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
 import "./header.css";
 
@@ -15,9 +14,6 @@ const Header = () => {
             </div>
             <CTA />
             <HeaderSocials />
-            <div className="me">
-                <img src={ME} alt="me" />
-            </div>
         </div>
     </header>
   );
