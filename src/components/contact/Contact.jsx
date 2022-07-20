@@ -1,13 +1,17 @@
 import React from "react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 
 const Contact = (props) => {
   const { setOpenModal, setModalTitle, setModalPara } = props;
   const form = useRef();
+  const process = () => toast.loading("Processing your message...");
 
   const sendEmail = (e) => {
+    process();
     e.preventDefault();
     emailjs
       .sendForm(
@@ -18,6 +22,7 @@ const Contact = (props) => {
       )
       .then(
         (result) => {
+          toast.dismiss();
           console.log(result.text);
           setModalTitle("Thanks for reaching out!");
           setModalPara(
@@ -26,6 +31,7 @@ const Contact = (props) => {
           setOpenModal(true);
         },
         (error) => {
+          toast.dismiss();
           console.log(error.text);
           setModalTitle("Something went wrong!");
           setModalPara(
@@ -39,6 +45,18 @@ const Contact = (props) => {
 
   return (
     <section id="contact">
+      <ToastContainer
+        position="top-center"
+        draggable={false}
+        closeButton={false}
+        toastStyle={{
+          backgroundColor: "rgba(44, 44, 109, 0.8)",
+          color: "white",
+          border: "2px solid rgba(77, 181, 255, 0.8)",
+          borderRadius: "0.75rem",
+          marginTop: "1rem",
+        }}
+      />
       <div className="titleContainer">
         <h5>Get In Touch</h5>
         <h2>Contact Me</h2>
