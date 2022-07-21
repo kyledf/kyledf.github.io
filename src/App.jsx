@@ -7,13 +7,14 @@ import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Experience from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [activeNav, setActiveNav] = useState("#");
   const [openModal, setOpenModal] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalPara, setModalPara] = useState("");
+
   const handleScrollActiveNav = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
@@ -35,6 +36,11 @@ const App = () => {
       });
     });
   };
+
+  useEffect(() => {
+    if (openModal) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [openModal]);
 
   return (
     <>

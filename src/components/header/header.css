@@ -6,11 +6,19 @@ header {
 }
 
 .headerContainer {
-  text-align: center;
   height: 100%;
   position: relative;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
 }
 
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* --------------CTA---------------- */
 .cta {
   margin-top: 2.5rem;
@@ -19,6 +27,7 @@ header {
   align-items: center;
   flex-direction: row;
   gap: 1.2rem;
+  text-align: center;
 }
 
 /* --------------Header Socials---------------- */
@@ -37,9 +46,22 @@ header {
 
 /*------------------- Media Queries (medium devices) ------------------------*/
 @media screen and (max-width: 1025px) {
-  .cta{
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cta {
     margin-top: 1.5rem;
     flex-direction: column;
+  }
+  .cta .button {
+    width: 100%;
+  }
+  .headerSocials {
+    gap: 2rem;
   }
   .headerSocials a {
     font-size: 1.7rem;
@@ -52,6 +74,5 @@ header {
   }
   .cta {
     margin-top: 1rem;
-    flex-direction: column;
   }
 }

@@ -137,10 +137,11 @@ a:hover {
   width: max-content;
   display: inline-block;
   color: var(--colour-primary);
+  background: var(--colour-bg-variant);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--colour-primary);
+  border: 2px solid var(--colour-primary);
   transition: var(--transition);
 }
 
