@@ -1,12 +1,12 @@
 .experienceContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .experienceContainer > div {
   background: var(--colour-bg-variant);
-  padding: 2.4rem 5rem;
+  padding: 2rem;
   border-radius: 2rem;
   border: 2px solid var(--colour-primary-variant);
   transition: var(--transition);

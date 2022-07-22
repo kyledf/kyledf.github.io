@@ -4,12 +4,17 @@ import { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
 
 const Project = (props) => {
-  const {id, img, title, about, icon, github, demo} = props;
+  const { id, img, title, about, icon, github, demo } = props;
   const [expand, setExpand] = useState(false);
   const [itemName, setItemName] = useState("portfolioItem");
 
+  const handleExpand = () => {
+    setExpand(!expand);
+    setItemName(expand ? "portfolioItem" : "portfolioItemExpanded");
+  };
+
   return (
-    <article key={id} className={itemName}>
+    <article key={id} className={itemName} onClick={handleExpand}>
       <div className="portfolioItemImg">
         <img src={img} alt={title} />
       </div>
@@ -27,13 +32,7 @@ const Project = (props) => {
         <a href={demo} className="button buttonPrimary" target="_blank">
           Demo
         </a>
-        <label
-          className="button expandButton"
-          onClick={() => {
-            setExpand(!expand);
-            setItemName(expand ? "portfolioItem" : "portfolioItemExpanded");
-          }}
-        >
+        <label className="button expandButton" onClick={handleExpand}>
           <MdExpandMore />
         </label>
       </div>

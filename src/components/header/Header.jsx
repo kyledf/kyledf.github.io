@@ -10,7 +10,9 @@ const Header = () => {
         <div className="headerTitle">
           <h5>Hello I am</h5>
           <h1>Kyle Francis</h1>
-          <h5 className="textLight">Software Engineer</h5>
+          <h5 className="textLight">
+            Software Engineer
+          </h5>
         </div>
         <div className="headerLinks">
           <CTA />

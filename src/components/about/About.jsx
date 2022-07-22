@@ -20,31 +20,35 @@ const About = () => {
         </div>
         <div className="aboutContent">
           <div className="aboutCards">
-            <article className="aboutCard">
-              <MdWork className="aboutIcon" />
-              <h5>Experience</h5>
-              <small>3+ Years University</small>
-            </article>
-            <article className="aboutCard">
-              <FaFolder className="aboutIcon" />
-              <h5>Projects</h5>
-              <small>3 Completed Projects</small>
-            </article>
-            <article className="aboutCard">
-              <FaSmile className="aboutIcon" />
-              <h5>Hobbies</h5>
-              <small>Coding, Filmmaking, Drumming, Travel</small>
-            </article>
+            <a href="#experience">
+              <article className="aboutCard">
+                <MdWork className="aboutIcon" />
+                <h5>Experience</h5>
+                <small>3+ Years University</small>
+              </article>
+            </a>
+            <a href="#portfolio">
+              <article className="aboutCard">
+                <FaFolder className="aboutIcon" />
+                <h5>Projects</h5>
+                <small>4 Completed Projects</small>
+              </article>
+            </a>
+              <article className="aboutCard">
+                <FaSmile className="aboutIcon" />
+                <h5>Hobbies</h5>
+                <small>Coding, Filmmaking, Drumming, Travel</small>
+              </article>
           </div>
 
           <p>
             I am a full-time student at AUT completing a Bachelor of Engineering
-            (Honours) degree, majoring in Software Engineering. I enjoy programming,
-            filmmaking, drumming and traveling. I enjoy working as part of a
-            team, but I am also capable of working independently. I am always willing to
-            learn more about new technologies and how to use them. In the
-            future, I would love to combine my passion for film and programming
-            into a career as a front-end or full-stack developer.
+            (Honours) degree, majoring in Software Engineering. I enjoy
+            programming, filmmaking, drumming and traveling. I enjoy working as
+            part of a team, but I am also capable of working independently. I am
+            always willing to learn more about new technologies and how to use
+            them. In the future, I would love to combine my passion for film and
+            programming into a career as a front-end or full-stack developer.
           </p>
 
           <a href="#contact" className="button buttonPrimary">

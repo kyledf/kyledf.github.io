@@ -37,14 +37,16 @@
 
 .aboutCard {
   background: var(--colour-bg-variant);
+  color: var(--colour-white);
   border: 2px solid var(--colour-primary-variant);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  height: 100%;
 }
 
-.aboutCard:hover{
+.aboutCard:hover {
   transform: scale(1.05);
 }
 

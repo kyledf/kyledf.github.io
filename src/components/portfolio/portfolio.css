@@ -17,6 +17,7 @@
 
 .portfolioItem:hover,
 .portfolioItemExpanded:hover {
+  cursor: pointer;
   transform: scale(1.03);
 }
 

@@ -32,7 +32,7 @@ const Experience = () => {
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>JavaScript</h4>
-                <small className="textLight">5+ years</small>
+                <small className="textLight">4+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
@@ -74,6 +74,33 @@ const Experience = () => {
               <div>
                 <h4>Java</h4>
                 <small className="textLight">2+ years</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div className="experienceTools">
+          <h3>Tools and Technologies</h3>
+          <div className="experienceContent">
+            <article className="experienceDetails">
+              <SiCheckmarx className="experienceDetailsIcon" />
+              <div>
+                <h4>GitHub</h4>
+                <small className="textLight">3+ years</small>
+              </div>
+            </article>
+            <article className="experienceDetails">
+              <SiCheckmarx className="experienceDetailsIcon" />
+              <div>
+                <h4>Figma</h4>
+                <small className="textLight">4+ months</small>
+              </div>
+            </article>
+            <article className="experienceDetails">
+              <SiCheckmarx className="experienceDetailsIcon" />
+              <div>
+                <h4>Trello</h4>
+                <small className="textLight">4+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
