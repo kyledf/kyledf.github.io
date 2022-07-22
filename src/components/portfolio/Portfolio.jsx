@@ -11,17 +11,13 @@ import Project from "./Project";
 const data = [
   {
     id: 1,
-    title: "SportsHub",
-    img: IMG1,
+    title: "Virtual Pet Game",
+    img: IMG3,
     about:
-      "An app where athletes can create and join events and teams, and chat with other athletes. The app is built with React Native, JavaScript, and Firebase.",
-    github: "https://github.com/kyledf/SportsHub",
-    demo: "https://www.youtube.com/watch?v=R73ASu2QsIc",
-    icons: [
-      <FaReact size={30} />,
-      <SiJavascript size={30} />,
-      <SiFirebase size={30} />,
-    ],
+      "This game app allows users to play with a virtual pet of their choosing. They can feed and play with the pet or let the pet sleep. The aim of the game is to get the highest number of rounds. The game was built with Java, SQL, and Apache Derby DB.",
+    github: "https://github.com/kyledf/KyleVirtualPet",
+    demo: "https://youtu.be/ig_glJpfH_g",
+    icons: [<FaJava size={30} />, <SiMysql size={30} />],
   },
   {
     id: 2,
@@ -41,19 +37,24 @@ const data = [
   },
   {
     id: 3,
-    title: "Virtual Pet Game",
-    img: IMG3,
+    title: "SportsHub",
+    img: IMG1,
     about:
-      "This game app allows users to play with a virtual pet of their choosing. They can feed and play with the pet or let the pet sleep. The aim of the game is to get the highest number of rounds. The game was built with Java, SQL, and Apache Derby DB.",
-    github: "https://github.com/kyledf/KyleVirtualPet",
-    demo: "https://youtu.be/ig_glJpfH_g",
-    icons: [<FaJava size={30} />, <SiMysql size={30} />],
+      "An app where athletes can create and join events and teams, and chat with other athletes. The app is built with React Native, JavaScript, and Firebase.",
+    github: "https://github.com/kyledf/SportsHub",
+    demo: "https://www.youtube.com/watch?v=R73ASu2QsIc",
+    icons: [
+      <FaReact size={30} />,
+      <SiJavascript size={30} />,
+      <SiFirebase size={30} />,
+    ],
   },
   {
     id: 4,
     title: "Portfolio Website",
     img: IMG4,
-    about: "This website allows me to showcase my skills and projects, let people connect with me via my socials, and get in contact with me.",
+    about:
+      "This website allows me to showcase my skills and projects, let people connect with me via my socials, and get in contact with me.",
     github: "https://github.com/kyledf/portfolio",
     demo: "https://kyledf.me",
     icons: [
@@ -64,6 +65,7 @@ const data = [
     ],
   },
 ];
+const projects = [...data].reverse();
 
 const Portfolio = () => {
   return (
@@ -73,7 +75,7 @@ const Portfolio = () => {
         <h2>Portfolio</h2>
       </div>
       <div className="container containerPortfolio">
-        {data.map(({ id, title, img, about, github, demo, icons }) => {
+        {projects.map(({ id, title, img, about, github, demo, icons }) => {
           return (
             <Project
               id={id}
