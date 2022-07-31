@@ -50,10 +50,6 @@ const About = () => {
             them. In the future, I would love to combine my passion for film and
             programming into a career as a front-end or full-stack developer.
           </p>
-
-          <a href="#contact" className="button buttonPrimary">
-            Let's Talk
-          </a>
         </div>
       </div>
     </section>
