@@ -32,21 +32,21 @@ const Experience = () => {
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>JavaScript</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>React</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>React Native</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
           </div>
@@ -85,7 +85,7 @@ const Experience = () => {
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
-                <h4>GitHub</h4>
+                <h4>Git</h4>
                 <small className="textLight">3+ years</small>
               </div>
             </article>
@@ -93,21 +93,21 @@ const Experience = () => {
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Figma</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Trello</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Firebase</h4>
-                <small className="textLight">4+ months</small>
+                <small className="textLight">7+ months</small>
               </div>
             </article>
           </div>
