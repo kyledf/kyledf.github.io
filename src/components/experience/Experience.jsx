@@ -32,21 +32,21 @@ const Experience = () => {
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>JavaScript</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>React</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>React Native</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
           </div>
@@ -93,21 +93,21 @@ const Experience = () => {
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Figma</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Trello</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
             <article className="experienceDetails">
               <SiCheckmarx className="experienceDetailsIcon" />
               <div>
                 <h4>Firebase</h4>
-                <small className="textLight">7+ months</small>
+                <small className="textLight">9+ months</small>
               </div>
             </article>
           </div>

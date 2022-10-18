@@ -79,7 +79,7 @@ const data = [
     title: "SPEED",
     img: IMG5,
     about:
-      "(STILL IN DEVELOPMENT) Software Practice Empirical Evidence Database (SPEED) is a website where users can upload articles to a database and moderators can approve or reject uploaded articles. Only approved articles can be viewed by users. Built with React, HTML, CSS and JavaScript for frontend, MongoDB for backend and hosted on Heroku.",
+      "Software Practice Empirical Evidence Database (SPEED) is a website where users can upload articles to a database and moderators can approve or reject uploaded articles. Only approved articles can be viewed by users. Built with React, HTML, CSS and JavaScript for frontend, MongoDB for backend and hosted on Heroku.",
     github: "https://github.com/kyledf/SPEED",
     demo: "https://speed-cise-2022.herokuapp.com",
     icons: [
