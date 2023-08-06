@@ -26,7 +26,7 @@ const data = [
     about:
       "This website allows me to showcase my skills and projects, let people connect with me via my socials, and get in contact with me.",
     github: "https://github.com/kyledf/portfolio",
-    demo: "https://kyledf.me",
+    demo: "https://kyledf.github.io/",
     icons: [
       <FaReact size={30} />,
       <FaHtml5 size={30} />,
@@ -96,7 +96,7 @@ const data = [
     title: "Home Cooking Marketplace",
     img: IMG6,
     about:
-      "(STILL IN DEVELOPMENT) A purely frontend application that allows users to search for home cooked meals that they want to purchase. Application designed using Figma and built with React Native and JavaScript.",
+      "A purely frontend application that allows users to search for home cooked meals that they want to purchase. Application designed using Figma and built with React Native and JavaScript.",
     github: "https://github.com/kyledf/home-cooking",
     demo: "https://github.com/kyledf/home-cooking",
     icons: [
