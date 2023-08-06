@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages-deploy": "^0.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -18,7 +19,7 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "build": "react-scripts build",
-    "deploy": "npm run gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "bd": "npm run build && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +44,6 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "^5.0.1"
   }
 }
